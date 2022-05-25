@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "1071099124095",
+    "project_id": "toptep-3d276",
+    "storage_bucket": "toptep-3d276.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1071099124095:android:ab6ff4d42eb6b42272624a",
+        "android_client_info": {
+          "package_name": "com.example.top_tep"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1071099124095-bghsg17hfkhiks11nk79c2jc44hkmt2p.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDd_kqUd6sY4ZLHL1m2lY6dnX73GDLT7MQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1071099124095-bghsg17hfkhiks11nk79c2jc44hkmt2p.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
