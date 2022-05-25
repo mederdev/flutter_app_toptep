@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:stacked/stacked.dart';
-import 'package:top_tep/database_options/base_operations.dart';
 import 'package:top_tep/domains/user_panel/home_view_model.dart';
 import 'package:top_tep/domains/user_panel/home_views/news_view.dart';
 import 'package:top_tep/domains/user_panel/home_views/standings_view.dart';
@@ -49,7 +48,7 @@ class _HomePageState extends State<HomePage> {
                 ListTile(
                   title: const Text("Log Out"),
                   trailing: const Icon(Icons.exit_to_app),
-                  onTap: () => {signOut()},
+                  onTap: () => {viewModel.signOut()},
                 ),
                 Visibility(
                   child: ElevatedButton(

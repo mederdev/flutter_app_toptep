@@ -1,3 +1,4 @@
+import 'package:firebase_auth/firebase_auth.dart';
 import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:flutter/material.dart';
 import 'package:top_tep/domains/user_panel/home_model.dart';
@@ -62,5 +63,13 @@ class HomePageViewModel extends ChangeNotifier {
         });
 
     notifyListeners();
+  }
+
+  Future<void> signOut() async {
+    try {
+      await FirebaseAuth.instance.signOut();
+    } catch (e) {
+      print(e); // TODO: show dialog with error
+    }
   }
 }
