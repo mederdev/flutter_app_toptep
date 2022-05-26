@@ -2,12 +2,10 @@ import 'package:flutter/material.dart';
 import 'package:top_tep/domains/user_panel/home_view_model.dart';
 
 class StandingView extends StatelessWidget {
-  HomePageViewModel? homePageViewModel;
   TableRow? tableRow;
 
   StandingView(HomePageViewModel a, {Key? key}) : super(key: key) {
     tableRow = TableRow(a);
-    homePageViewModel = a;
   }
 
   @override

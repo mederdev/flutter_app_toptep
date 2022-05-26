@@ -8,6 +8,8 @@ class HomeModel {
   List<DataNew> dataNews = [];
 
   List<DataStanding> dataStanding = [];
+
+  List<DataSchedule> dataSchedule = [];
 }
 
 class DataNew {
@@ -36,5 +38,19 @@ class DataStanding {
     this.ml = ml;
     this.md = md;
     this.pts = pts;
+  }
+}
+
+class DataSchedule {
+  String? name1;
+  String? name2;
+  String? date;
+  String? time;
+
+  DataSchedule(String name1, String name2, String date, String time) {
+    this.name1 = name1;
+    this.name2 = name2;
+    this.date = date;
+    this.time = time;
   }
 }

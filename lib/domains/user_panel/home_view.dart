@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:stacked/stacked.dart';
 import 'package:top_tep/domains/user_panel/home_view_model.dart';
 import 'package:top_tep/domains/user_panel/home_views/news_view.dart';
+import 'package:top_tep/domains/user_panel/home_views/shedule_view.dart';
 import 'package:top_tep/domains/user_panel/home_views/standings_view.dart';
 
 class HomePage extends StatefulWidget {
@@ -66,9 +67,7 @@ class _HomePageState extends State<HomePage> {
             children: <Widget>[
               NewsView(viewModel),
               StandingView(viewModel),
-              Center(
-                child: const Text('work screen'),
-              ),
+              ScheduleView(viewModel)
             ],
           ),
         ),

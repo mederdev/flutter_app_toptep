@@ -35,6 +35,7 @@ class HomePageViewModel extends ChangeNotifier {
     });
     setNews();
     setStanding();
+    setSchedule();
     notifyListeners();
   }
 
@@ -62,6 +63,19 @@ class HomePageViewModel extends ChangeNotifier {
           }),
         });
 
+    notifyListeners();
+  }
+
+  void setSchedule() async {
+    await _firebaseFirestore.collection('schedule').get().then((value) => {
+          value.docs.forEach((element) {
+            final club = element.data().values.elementAt(2);
+            final club2 = element.data().values.elementAt(1);
+            final date = element.data().values.elementAt(0);
+            final time = element.data().values.elementAt(3);
+            homeModel.dataSchedule.add(DataSchedule(club, club2, date, time));
+          }),
+        });
     notifyListeners();
   }
 
