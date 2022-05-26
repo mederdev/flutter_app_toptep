@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:stacked/stacked.dart';
+import 'package:top_tep/domains/admin_panel/admin_view.dart';
 import 'package:top_tep/domains/user_panel/home_view_model.dart';
 import 'package:top_tep/domains/user_panel/home_views/news_view.dart';
 import 'package:top_tep/domains/user_panel/home_views/shedule_view.dart';
@@ -54,7 +55,9 @@ class _HomePageState extends State<HomePage> {
                 Visibility(
                   child: ElevatedButton(
                     onPressed: () {
-                      viewModel.setStanding();
+                      Navigator.push(context,
+                          MaterialPageRoute(builder: (context) => AdminView()));
+                      ;
                     },
                     child: const Text('Admin Panel'),
                   ),
